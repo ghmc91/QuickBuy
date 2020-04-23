@@ -5,14 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickBuy.Domain.Enumerados
+namespace QuickBuy.Domain.Contract
 {
-    public enum TipoFormaPagamentoEnum 
+    public interface IPedidoRepository : IBaseRepository<Pedido>
     {
-        NaoDefinido = 0,
-        Boleto = 1,
-        CartaCredito = 2,
-        Deposito = 3
+
+
 
     }
 }
